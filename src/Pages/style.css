@@ -1,0 +1,83 @@
+.form {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    color: #4E506B;
+    width: 400px;
+    padding: 50px;
+    border-radius: 10px;   
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.logo img{
+    width: 70%;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px;
+}
+
+.login-group, .register-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-field, .register-field {
+    border: none;
+    background-color: rgb(233, 233, 233);
+    color: #4E506B;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    margin-top: 5px;
+    padding: 1rem;
+    width: 100%;
+    transition: all ease 0.1s;
+    box-sizing: border-box;
+}
+
+.login-field:focus, .register-field:focus  {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.login-error, .register-error {
+    margin-top: 5px;
+}
+
+.login-label, .register-label {
+    margin-top: 25px;
+}
+
+.login-btn, .logout-btn, .register-btn  {
+    background-color: #4b6cb7;
+    color: #fdfdfd;
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-btn:hover, .logout-btn:hover, .register-btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .form {
+        width: 75%;
+        padding: 4%;  
+    }
+}
