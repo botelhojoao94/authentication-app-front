@@ -14,7 +14,7 @@ function AuthProvider({ children }) {
     const handleSignIn = values => {
         localStorage.removeItem('app-token')
         localStorage.removeItem('username')
-        axios.post('http://localhost:8080/user/check', values)
+        axios.post('https://authentication-api-back.herokuapp.com/user/check', values)
             .then(res => {
                 if (res.data.erro) {
                     setWrongAccount(true)
@@ -30,7 +30,7 @@ function AuthProvider({ children }) {
     }
 
     const handleSignUp = values => {
-        axios.post('http://localhost:8080/user/create', values)
+        axios.post('https://authentication-api-back.herokuapp.com/user/create', values)
             .then(res => {
                 if (res.data.erro)
                     setExistingEmail(true)
